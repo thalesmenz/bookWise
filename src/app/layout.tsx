@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Lato } from "next/font/google";
+import { StitchesRegistry } from "@/libs/stitches/registry";
 
 import { getCssText, globalStyles } from "@/../stitches.config";
 
@@ -25,7 +26,11 @@ export default function RootLayout({ children }: Props) {
           dangerouslySetInnerHTML={{ __html: getCssText() }}
         />
       </head>
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className}>
+        <StitchesRegistry>
+          {children}
+        </StitchesRegistry>
+      </body>
     </html>
   );
 }

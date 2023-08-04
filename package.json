@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "github:phosphor-icons/react",
     "@stitches/react": "^1.2.8",
     "@types/node": "20.1.5",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "next": "13.4.2",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-hook-form": "^7.45.2",
+    "typescript": "5.0.4",
+    "zod": "^3.21.4"
   }
 }
